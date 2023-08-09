@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.18.3
 ENV TAG=v1.0.3
 RUN cd /usr/local/bin && \
   wget -qO - https://github.com/w4/bin/releases/download/$TAG/bin-$TAG-x86_64-unknown-linux-musl.tar.gz | tar xvz
